@@ -47,7 +47,7 @@ public class Polynomial{
     }
 
     public double evaluate(double val){
-        int answer = 0;
+        double answer = 0;
 
         for (int i = 0; i < this.coefficients.length; i++){
             answer = answer + Math.pow(val, i) * this.coefficients[i];
@@ -57,7 +57,7 @@ public class Polynomial{
     }
 
     public boolean hasRoot(double val){
-        int answer = this.evaluate(val);
+        double answer = this.evaluate(val);
         if (answer == 0){
             return true;
         }
